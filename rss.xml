@@ -1,0 +1,24 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<rss version="2.0">
+
+<channel>
+  <title>Chandler Kent</title>
+  <link>http://www.chandlerkent.com</link>
+  <description>Blog of Chandler Kent</description>
+  <language>en-us</language>
+  
+    {% for post in site.posts %}
+    <item>
+        <title>{{ post.title }}</title>
+        <link>http://www.chandlerkent.com{{ post.url }}</link>
+        <description>{{ post.content | xml_escape }}</description>
+        <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+        <guid>http://www.chandlerkent.com{{ post.id }}</guid>
+    </item>        
+    {% endfor %}
+</channel>
+
+</rss>
