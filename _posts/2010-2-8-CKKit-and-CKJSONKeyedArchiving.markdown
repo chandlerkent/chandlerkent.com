@@ -7,6 +7,8 @@ tags: [cappuccino, objective-j, CKKit, CKJSONKeyedArchiving, archiving, unarchiv
 
 When I relaunched my blog it was goal to write at least one post per week. Since my last post was about a month ago, I obviously have not met that goal. Unfortunately, a lot of other things have got in my way these last few weeks (mostly school), but I will continue to attempt to meet that goal, even if it means smaller posts.
 
+<!-- more -->
+
 I would like to continue to talk about Cappuccino, but stray from my last posts mostly about `CPOutlineView` and talk a little about [CKKit][] and a new project I just pushed. CKKit is a collection of classes I have created that I think are general enough that other Cappuccino developers might find them useful. As of this writing, there are only two projects in there, and only one that I think is worth talking about.
 
 [CKKit]: http://www.github.com/chandlerkent/CKKit

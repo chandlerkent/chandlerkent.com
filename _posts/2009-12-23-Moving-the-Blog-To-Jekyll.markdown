@@ -7,6 +7,8 @@ I started chandlerkent.com about four years ago as a way to learn how to create 
 
 [iPhlickr]: http://www.iphlickr.com/
 
+<!-- more -->
+
 This year I decided I wanted to start blogging again. But I wanted to do it in such a way that would be more sustainable for me in the future. This meant it would need to be drop-dead simple for me to update, maintain, and add features. So I started looking into my options. I looked at [WordPress][], but it seemed like a lot of overhead. I've also heard that WordPress had some [security issues](http://daringfireball.net/2009/09/regarding_wordpress_and_security) in the past, as well as being a notorious [CPU hog](http://www.codinghorror.com/blog/archives/001105.html). I wanted a little more control over my content that WordPress also didn't offer. So I kept looking. Google's [Blogger][] seemed to offer more benefits. It was very simple to set-up, offered an API that allowed me to use other tools to blog instead of the crappy web interface, and allowed me to host it on my own domain.
 
 [WordPress]: http://wordpress.org/

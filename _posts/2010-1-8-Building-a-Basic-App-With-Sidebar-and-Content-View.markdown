@@ -6,6 +6,8 @@ tags: [cappuccino, objective-j, CPOutlineView, atlas, sidebar, CPNotification, C
 
 In the [last post][last post] I showed you how to build a basic sidebar using `CPOutlineView` and all its data source methods. In this post I am going to continue that idea and show you how to update a content view based on the user's selection in the sidebar. You can see a [demo][demo] of the final application to get the idea. All the source code created for this post can be found [here][SidebarChangingContentView].
 
+<!-- more -->
+
 ***Quick Note:** I am using [Atlas][] in this post to layout my basic view and make some connections. If you are not part of the Atlas beta, or do not yet have Atlas, the following ideas should still extend to your application.*
 
 [last post]: /2009/12/10/Building-a-Sidebar-With-CPOutlineView.html
