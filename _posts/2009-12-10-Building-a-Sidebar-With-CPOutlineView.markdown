@@ -36,7 +36,11 @@ Most of these methods are pretty self explanatory and I'm not going to go into m
 
 That's basically it. The final piece is to actually back your dataSource with some object or objects. Since I only need two levels of data, I am using a `CPDictionary` where the keys are the top level and the values are arrays of data for the second level.
 
-You can see the code for my finished AppController at <http://gist.github.com/251323>. I included a bunch of debug statements in the dataSource methods to help understand what exactly is going on. You can see a running version of this project at <http://www.chandlerkent.com/code/OutlineView/>.
+Here is the finished AppController:
+
+{% gist 251323 %}
+
+I included a bunch of debug statements in the dataSource methods to help understand what exactly is going on. You can see a running version of this project at <http://www.chandlerkent.com/code/OutlineView/>.
 
 ## What's Next
 

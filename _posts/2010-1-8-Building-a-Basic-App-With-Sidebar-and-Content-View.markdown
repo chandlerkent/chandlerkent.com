@@ -34,15 +34,17 @@ Last time I just used `CPString`s as my items in the sidebar. However, you can u
 of your data source. Instead of just returning `item`, you will want to return `[item name]` (the string that will be displayed in the outline view).
 
 Also, I wanted my Outline View to show all of its top-level items as expanded when it is first loaded. I used the following method for that:
-    
-    - (void)expandAllItems
-    {
-        var allItems = [items allKeys];
-        for (var i = 0; i < [allItems count]; i++)
-        {
-            [outlineView expandItem:[allItems objectAtIndex:i]];
-        }
-    }
+
+{% codeblock lang:objc %}
+- (void)expandAllItems
+{
+	 var allItems = [items allKeys];
+	 for (var i = 0; i < [allItems count]; i++)
+	 {
+		 [outlineView expandItem:[allItems objectAtIndex:i]];
+	 }
+}
+{% endcodeblock %}
 
 Finally, since I am using Atlas, I want Atlas to instantiate my `SidebarController` for me. To do that, go back to MainMenu.cib, drag a "Custom Object" into the object section (the area along the bottom of the window). With the new object selected, change its class in the Class tab to `SidebarController`. Also, connect the outlet `sidebarScrollView` of the SidebarController to the Scroll View in the left view.
 
@@ -61,29 +63,33 @@ The `ContentViewController` will have an outlet which references the right view 
 
 In the `- (void)awakeFromCib` method (which will be called when our object is instantiated from MainMenu.cib), all we need to do is register our object to receive notifications when the Outline View's selection changed, specifically we want to know about the `CPOutlineViewSelectionDidChangeNotification` notification. This is done like:
 
-    [[CPNotificationCenter defaultCenter]
-            addObserver:self
-            selector:@selector(outlineViewSelectionDidChange:)
-            name:CPOutlineViewSelectionDidChangeNotification
-            object:nil];
+{% codeblock lang:objc %}
+[[CPNotificationCenter defaultCenter]
+	 addObserver:self
+	 selector:@selector(outlineViewSelectionDidChange:)
+	 name:CPOutlineViewSelectionDidChangeNotification
+	 object:nil];
+{% endcodeblock %}
             
 If you pass it a non-`nil` object, your selector will only be called when the notification is posted from that specific object. Also, you can specify whatever selector you want, but in this case I called it `- (void)outlineViewSelectionDidChange:`. This method will be called with the `CPNotification` object that was posted by the `CPNotificationCenter`. The implementation of this method may look like:
 
-    - (void)outlineViewSelectionDidChange:(CPNotification)notification
-    {
-        var outlineView = [notification object];
-        var selectedRow = [[outlineView selectedRowIndexes] firstIndex];
-        var item = [outlineView itemAtRow:selectedRow];
+{% codeblock lang:objc %}
+- (void)outlineViewSelectionDidChange:(CPNotification)notification
+{
+	 var outlineView = [notification object];
+	 var selectedRow = [[outlineView selectedRowIndexes] firstIndex];
+	 var item = [outlineView itemAtRow:selectedRow];
 
-        if ([item color])
-        {
-            [contentView setBackgroundColor:[item color]];
-        }
-        else
-        {
-            [contentView setBackgroundColor:[CPColor clearColor]];
-        }
-    }
+	 if ([item color])
+	 {
+	   [contentView setBackgroundColor:[item color]];
+	 }
+	 else
+	 {
+	   [contentView setBackgroundColor:[CPColor clearColor]];
+	 }
+}
+{% endcodeblock %}
     
 In the method you will notice that you can get the outline view through the method `[notification object]`. Then, you get the selected row of the outline view and finally the selected item. In your application you can do what you like with this item; I just change the background color of the content view.
 
