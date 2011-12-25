@@ -40,7 +40,7 @@ Here is the finished AppController:
 
 {% gist 251323 %}
 
-I included a bunch of debug statements in the dataSource methods to help understand what exactly is going on. You can see a running version of this project at <http://www.chandlerkent.com/code/OutlineView/>.
+I included a bunch of debug statements in the dataSource methods to help understand what exactly is going on. [Check out a demo of this project](/code/OutlineView/).
 
 ## What's Next
 
