@@ -2,7 +2,7 @@
 layout: post
 published: false
 title: CKKit and CKJSONKeyedArchiving
-tags: [cappuccino, objective-j, CKKit, CKJSONKeyedArchiving, archiving, unarchiving, serialization]
+categories: [cappuccino, objective-j, CKKit, CKJSONKeyedArchiving, archiving, unarchiving, serialization]
 ---
 
 When I relaunched my blog it was goal to write at least one post per week. Since my last post was about a month ago, I obviously have not met that goal. Unfortunately, a lot of other things have got in my way these last few weeks (mostly school), but I will continue to attempt to meet that goal, even if it means smaller posts.

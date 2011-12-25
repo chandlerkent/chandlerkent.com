@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Building a Basic App With a Sidebar and Content View
-tags: [cappuccino, objective-j, CPOutlineView, atlas, sidebar, CPNotification, CPNotificationCenter]
+categories: [cappuccino, objective-j, CPOutlineView, atlas, sidebar, CPNotification, CPNotificationCenter]
 ---
 
 In the [last post][last post] I showed you how to build a basic sidebar using `CPOutlineView` and all its data source methods. In this post I am going to continue that idea and show you how to update a content view based on the user's selection in the sidebar. You can see a [demo][demo] of the final application to get the idea. All the source code created for this post can be found [here][SidebarChangingContentView].

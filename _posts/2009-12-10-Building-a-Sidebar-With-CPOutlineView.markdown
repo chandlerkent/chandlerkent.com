@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Building a Sidebar With CPOutlineView
-tags:   [cappuccino, objective-j, CPOutlineView, CPTableView, atlas]
+categories:   [cappuccino, objective-j, CPOutlineView, CPTableView, atlas]
 ---
 
 This past week I was tasked with converting our `CPCollectionView`-backed sidebar to one using a `CPOutlineView`. The reason for doing this was threefold. First, a collection view could not support all of the project's requirements going forward (at least not easily). Most notably, we wanted to support quick and easy navigation to common items like projects, glossaries, and some community links. Second, an outline view is more Mac-like in that most desktop Mac applications with a sidebar have some sort of outline view. This would move us closer to a Mac desktop experience on the web and lower the learning curve for new users. Finally, we just could.

@@ -1,6 +1,6 @@
 ---
 layout: post
-tags:   [jekyll, github, blog]
+categories:   [jekyll, github, blog]
 ---
 
 I started chandlerkent.com about four years ago as a way to learn how to create a website, including a backend powered by PHP and MySQL. At that time I created really basic blog software. This had many obvious problems, mainly it became impossible for me to maintain and add the features I needed. So the blog became stagnant. But from the experience I gained while building the site, I was able to create and deploy [iPhlickr][], which was also backed by PHP and MySQL. This site has basically been used for iPhlickr since then. About a year ago I deleted the blog altogether as the information was simply out-of-date and the site was an eyesore. I didn't want to associate myself with that work.
